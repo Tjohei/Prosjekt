@@ -1,0 +1,151 @@
+		body{
+			background: black;
+		}
+		
+		#canvas{
+			position: absolute;
+			margin-left: auto;	
+			margin-right: auto;
+			border: 5px solid rgba(250,0,0,0.4);
+			top: 340px;
+			width: 90%;
+			height: 20px;
+		}
+		footer{
+			border: 2px rgba(50,50,50,1) solid;
+			padding: 5px;
+			text-align: center;
+			color: white;
+		}
+		#compass{
+			visibility: hidden;
+		}
+		
+		#content{
+			margin-left:auto;
+			margin-right: auto;
+			width: 100%;
+			height: 100%;
+			font-size: 20pt;
+			color: white;
+			position:relative;
+		}
+		#wheel{
+			position: absolute;
+			width:  1000pt;
+			height: 1000pt;
+			
+			float: right;
+			left: -800px;
+			
+			top: -600px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("../media/wheel.png");
+		}
+		
+		#bar{
+			top:15%;
+			left: 50px;
+			position:absolute;
+			width:130%;
+			height: 12%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("../media/testright.png");
+		}
+		.hidden{
+			visibility: hidden;
+		}
+		button{
+			color: rgba(30,30,30,0.8);
+			text-shadow: 0pt 0pt 10pt rgba(90,90,90,1);
+			backround-size: cover;
+			border: none;
+			font-weight: bold;
+			font-size: 25pt;
+			border-radius: 10pt;
+			background-image: url("http://www.magic4walls.com/wp-content/uploads/2014/02/texture-orange-copper-brown-dark-tone-stripes-glow-background.jpg");
+		}
+		#but_1{
+			position: absolute;
+			transform: rotate(-90deg);
+			top: 7%;
+			left:46.7%;
+		}
+		#but_2{
+			position: absolute;
+			transform: rotate(-90deg);
+			top: 18%;
+			left:46.5%;
+		}
+		#but_3{
+			position: absolute;
+			transform: rotate(-90deg);
+			top: 31%;
+			left:45.2%;
+		}
+		
+		#but_4{
+			position: absolute;
+			top: 48%;
+			left:90%;
+		}
+		#but_5{
+			position: absolute;
+			
+			top: 48%;
+			left:75%;
+		}
+		#but_6{
+			position: absolute;
+			top: 48%;
+			left:63%;
+		}
+		
+		#but_7{
+			position: absolute;
+			top: 37%;
+			left: 5%;
+		}
+		#but_8{
+			position: absolute;
+			top: 37%;
+			left: 22%;
+		}
+		#but_9{
+			position: absolute;
+			top: 37%;
+			left: 44%;
+		}
+		#but_10{
+			position: absolute;
+			top: 37%;
+			left: 60.5%;
+		}
+		
+		#site{
+			position: absolute;
+			top:30%;
+			float: right;
+			font-size: 35pt;
+			width: 130%;
+			height: 140%;
+			border: dotted rgba(165,42,42, 0.2) 2px;
+		}
+
+		iframe{
+			border: none;
+			width:100%;
+			height:100%;
+		}
+		#logo{
+			z-index: -1;
+			position: absolute;
+			left: 68%;
+			top: -10px;
+			width: 50%;
+		}
+		footer{
+			visibility: hidden;
+		}

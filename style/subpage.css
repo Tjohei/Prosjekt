@@ -1,0 +1,10 @@
+body{
+	color: white;
+	height: 750px;
+	font-size: 15pt;
+	}
+div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%
+}
