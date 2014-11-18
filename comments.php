@@ -21,8 +21,14 @@
     </form>
     <br>
     <?php
-    //Naive implementation. Assumes comments file is there.
+    //Loads file
     $xml = simplexml_load_file('comments.xml');
+    //If file doesn't exist, create it.
+    if($xml === FALSE){
+        $xml = new SimpleXMLElement('<comments></comments>');
+        $xml->asXML('comments.xml');
+    }
+    //Check for new comment.
     if(isset($_POST['name']) && isset($_POST['content'])){
         $comment = $xml->addChild('comment');
         $comment->addChild('name', $_POST['name']);
