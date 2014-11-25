@@ -1,0 +1,44 @@
+pages{
+    border: solid darkred thick;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    text-align: center;
+    width: 60%;
+    min-width:280px;
+}
+
+name, url, page, subpage{
+    display: list-item;
+}
+
+page, subpage{
+    border: solid thin white;
+    padding: 5px;
+    list-style: none;
+
+}
+
+page{
+    color: #efefef;
+    background-color: #101010;
+}
+
+subpage{
+    color: #ffffff;
+    background-color: #303030;
+    margin-left: 10%;
+}
+
+page:hover {
+    background-color: #505050;
+    color: #efef00;
+    border-color: #9f0000;
+}
+
+subpage:hover{
+    background-color: #707070;
+    color: #ffff00;
+    border-color: #ef0000;
+}
