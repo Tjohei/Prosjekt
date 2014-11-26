@@ -288,7 +288,7 @@
 	}
 
 //target urls, used in goTo-function for displaying subpages and in loadIframes-function.
-	var targets = ["contact.html","home.html","about.html","tabletop.html","videogames.html","tabletop/board.html","tabletop/dice.html","tabletop/rpg.html","videogames/pc.html","videogames/console.html","videogames/other.html"]
+	var targets = ["contact.php","home.html","about.html","tabletop.html","videogames.html","tabletop/board.html","tabletop/dice.html","tabletop/rpg.html","videogames/pc.html","videogames/console.html","videogames/other.html"]
 	var targetHeight = [];
 	var loaded = 0;
 

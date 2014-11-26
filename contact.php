@@ -5,7 +5,7 @@
         ABOUT SWINE GAIMZ
     </title>
     <meta charset="UTF-8">
-    <!--<link rel="stylesheet" type="text/css" href="style/subpage.css">-->
+    <link rel="stylesheet" type="text/css" href="style/subpage.css">
 </head>
 <body>
 <div>
@@ -25,7 +25,7 @@
         if (isset($_POST['submit'])){
             echo "<br><br><b>Email has been sent!</b>";
 
-            $to = "testersen@mailinator.com";
+            $to = "swinegaimz@mailinator.com";
             $subject = "[Contact] Name: ".$_POST['name'];
             $txt = $_POST['comment'];
             $headers = "From: ".$_POST['email']."\r\n";
@@ -46,7 +46,7 @@
         Comment:<br>
         <textarea rows="10" cols="60" name="comment"></textarea>
         <br>
-        <input type="submit" name="submit">
+        <input type="submit" name="submit" value="Send">
     </form>
 
 </div>
