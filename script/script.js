@@ -202,55 +202,19 @@
 
 		buttons = document.getElementsByTagName('button');
 		buttons[6].addEventListener('click',function(){
-				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
-					if(i > 5){
-						break;
-						}
-					if(i > 2)
-						b.style.visibility="hidden";
-					else
-						b.style.visibility="visible";
-				}
-				target = 90;
-				setImage(1);
 				goTo("tabletop");
 			});
 			
 		buttons[7].addEventListener('click',function(){
-				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
-					if(i > 5)
-						break;
-					if(i < 3)
-						b.style.visibility="hidden";
-					else
-						b.style.visibility="visible";
-				}
-				target = 0;
-				setImage(2);
+
 				goTo("videogames");
 		});
 		
 		buttons[8].addEventListener('click',function(){
-				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
-					if(i > 5){
-						break;
-						}
-					b.style.visibility="hidden";
-				}
-				target = 180;
-				setImage(3);
 				goTo("contact");
 			});
 		
 		buttons[9].addEventListener('click',function(){
-				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
-					if(i > 5){
-						break;
-						}
-					b.style.visibility="hidden";
-				}
-				target = 270;
-				setImage(3);
 				goTo("about");
 			});
 		
@@ -294,6 +258,57 @@
 
 //function for setting sub page and altering page height to contain sub page
 	function goTo(name){
+		name = name.toLowerCase();
+		name = name.replace(" ", "");
+		//the statements in the following if-clauses were individually placed in onclick listeners of buttons,
+		//but were moved here due to how the sitemap had to be made.
+		if(name.indexOf("tabletop") >= 0){
+				target = 90;
+				setImage(1);
+				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
+						if(i > 5){
+							break;
+							}
+						if(i > 2)
+							b.style.visibility="hidden";
+						else
+							b.style.visibility="visible";
+					}
+			}
+		else if(name.indexOf("videogames") >= 0){
+				target = 0;
+				setImage(2);
+				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
+					if(i > 5)
+						break;
+					if(i < 3)
+						b.style.visibility="hidden";
+					else
+						b.style.visibility="visible";
+				}			
+		}
+		else if(name.indexOf("contact") >= 0 ){
+				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
+					if(i > 5){
+						break;
+						}
+					b.style.visibility="hidden";
+				}
+				target = 180;
+				setImage(3);
+		}else if(name.indexOf("about") >= 0){
+				for(i = 0; b = document.getElementsByTagName("button")[i]; i++){
+					if(i > 5){
+						break;
+						}
+					b.style.visibility="hidden";
+				}
+				target = 270;
+				setImage(3);
+		
+		}
+		console.log("Name = " + name);
+		
 		site = document.getElementsByTagName("iframe");
 		var rightSite;
 		for(i = 0; i < site.length; i++){

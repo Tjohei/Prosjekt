@@ -41,7 +41,7 @@
                     var pages = xmlDoc.getElementsByTagName("page");
                     for(i = 0; i < pages.length; i++){
                         //For every page, get name and url, and write it to document as a list element.
-                        document.write("<li><a href='" + pages[i].getElementsByTagName("url")[0].childNodes[0].nodeValue + "'>"
+                        document.write("<li><a onclick= \"parent.goTo('" + pages[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "')\">"
                                         + pages[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</a></li>");
 
                         //If there exists subpages
@@ -51,16 +51,13 @@
                             //Write name and url to document as a nested list.
                             document.write("<ul>");
                             for(j = 0; j < subpages.length; j++){
-                                document.write("<li><a href='" + subpages[j].getElementsByTagName("url")[0].childNodes[0].nodeValue + "'>"
+                                document.write("<li><a onclick=\"parent.goTo('" +pages[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +"/" +subpages[j].getElementsByTagName("name")[0].childNodes[0].nodeValue + "')\">"								
                                 + subpages[j].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</a></li>");
                             }
 
                             document.write("</ul>");
-
                         }
-
                     }
-
                     document.write("</ul>");
                 </script>
             </div>
