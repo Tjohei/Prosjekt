@@ -18,10 +18,52 @@
 			Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn
 			Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn
 			</p>
-			
-			<p>
-			Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn
-			</p>
+
+            <h2>Sitemap</h2>
+            <div id="sitemap">
+                <script>
+                    if (window.XMLHttpRequest)
+                    {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp=new XMLHttpRequest();
+                    }
+                    else
+                    {// code for IE6, IE5
+                        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    //Open sitemap
+                    xmlhttp.open("GET","about/sitemap.xml",false);
+                    xmlhttp.send();
+                    xmlDoc=xmlhttp.responseXML;
+
+                    //Start writing sitemap to document
+                    document.write("<ul>");
+                    //Get all "page" nodes in sitemap.xml
+                    var pages = xmlDoc.getElementsByTagName("page");
+                    for(i = 0; i < pages.length; i++){
+                        //For every page, get name and url, and write it to document as a list element.
+                        document.write("<li><a href='" + pages[i].getElementsByTagName("url")[0].childNodes[0].nodeValue + "'>"
+                                        + pages[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</a></li>");
+
+                        //If there exists subpages
+                        if(pages[i].getElementsByTagName("subpages").length > 0){
+                            //Get all subpages
+                            var subpages = pages[i].getElementsByTagName("subpages")[0].getElementsByTagName("subpage");
+                            //Write name and url to document as a nested list.
+                            document.write("<ul>");
+                            for(j = 0; j < subpages.length; j++){
+                                document.write("<li><a href='" + subpages[j].getElementsByTagName("url")[0].childNodes[0].nodeValue + "'>"
+                                + subpages[j].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</a></li>");
+                            }
+
+                            document.write("</ul>");
+
+                        }
+
+                    }
+
+                    document.write("</ul>");
+                </script>
+            </div>
 		</div>
 	</body>
 </html>

@@ -9,3 +9,14 @@ div{
 	width: 80%;
     margin-bottom: 60px;
 }
+
+div #sitemap{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+div #sitemap a{
+    color: #ffffff;
+}
+

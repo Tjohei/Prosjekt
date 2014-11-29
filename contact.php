@@ -31,6 +31,8 @@
             $headers = "From: ".$_POST['email']."\r\n";
 
             mail($to,$subject,$txt,$headers);
+
+            $_POST = array();
         }
     ?>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">

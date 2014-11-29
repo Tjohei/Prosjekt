@@ -45,11 +45,5 @@
     <page>
         <name>About</name>
         <url>about.html</url>
-        <subpages>
-            <subpage>
-                <name>Sitemap</name>
-                <url>sitemap.html</url>
-            </subpage>
-        </subpages>
     </page>
 </pages>
