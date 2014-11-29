@@ -418,4 +418,11 @@
 	<br/>\
 	Compass source: http://fc04.deviantart.net/fs71/i/2013/296/7/9/compass_rose_by_draconicparagon-d6rjgqi.png <br/>\
 	Bacon image source: http://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png <br/>\
-	Button background source: http://www.magic4walls.com/wp-content/uploads/2014/02/texture-orange-copper-brown-dark-tone-stripes-glow-background.jpg <br/>"
+	Button background source: http://www.magic4walls.com/wp-content/uploads/2014/02/texture-orange-copper-brown-dark-tone-stripes-glow-background.jpg <br/>\
+	D20 image source: http://image9.spreadshirt.com/image-server/v1/compositions/111713986/views/1,width=235,height=235,appearanceId=1/D20-T-Shirt---Black-Dice.jpg <br>\
+	Controller source: http://img1.123freevectors.com/wp-content/uploads/new/objects/420-game-controller-vector-set.png<br>\
+	Home image source: http://i.telegraph.co.uk/multimedia/archive/02356/SomeLikeItHipHop_2356505b.jpg<br>\
+	House baratheon source: http://upload.wikimedia.org/wikipedia/commons/f/fd/Coa_icefire_Baratheon.jpg<br>\
+	Cave Story video: www.youtube.com/embed/mmGmHnTiiWw<br>\
+	Lands of Lore video: www.youtube.com/embed/6GfOzmvd0Bg<br>\
+	"
