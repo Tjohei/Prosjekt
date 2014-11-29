@@ -294,6 +294,10 @@
 
 //function for setting sub page and altering page height to contain sub page
 	function goTo(name){
+		name = name.toLowerCase();
+		name = name.replace(" ", "");
+		console.log("Name = " + name);
+		
 		site = document.getElementsByTagName("iframe");
 		var rightSite;
 		for(i = 0; i < site.length; i++){
