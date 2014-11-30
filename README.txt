@@ -1,4 +1,13 @@
 
+Group name: Gasgoose
+Group members: 
+
+Lars Harald Skjong(larshsk)
+Lars Lauvstad Sættem(larsls)
+Stian Hegerland Hagen(stianhh)
+
+---
+
 For this project we're using the following technologies:
 
 HTML
@@ -17,7 +26,8 @@ PHP is only used in contact.php to send an email after a user has filled out the
 If you want to check that this works, fill out the contact form and press submit,
 then go to "http://www.mailinator.com" and check the inbox of "swinegaimz".
 
-Credits and sources are shown at the bottom of the page, when you hover over "Credits & Sources"
+Credits and sources are shown at the bottom of the page, when you hover over "Credits & Sources".
+They're also located in "script.js" at the bottom of the file, in "var footertext"
 
 index.html will give an error for "scrolling='no'" in the iframe when running it through the w3 validator.
 We searched for alternatives and found the attribute "seamless", but since this isn't implemented in all browsers yet,
