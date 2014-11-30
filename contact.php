@@ -27,7 +27,7 @@
 
             $to = "swinegaimz@mailinator.com";
             $subject = "[Contact] Name: ".$_POST['name'];
-            $txt = $_POST['comment'];
+            $txt = $_POST['comment']."\r\n Phone number: ".$_POST['phone'];
             $headers = "From: ".$_POST['email']."\r\n";
 
             mail($to,$subject,$txt,$headers);
@@ -36,17 +36,17 @@
         }
     ?>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        Name:<br>
-        <input type="text" name="name" required>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required>
         <br>
-        E-mail:<br>
-        <input type="text" name="email" required>
+        <label for="email">E-mail:</label><br>
+        <input type="text" name="email" id="email" required>
         <br>
-        Phone number (Not required):<br>
-        <input type="number" name="phone">
+        <label for="phone">Phone number (Not required):</label><br>
+        <input type="number" name="phone" id="phone">
         <br>
-        Comment:<br>
-        <textarea rows="10" cols="60" name="comment"></textarea>
+        <label for="comment">Comment:</label><br>
+        <textarea rows="10" cols="60" name="comment" id="comment"></textarea>
         <br>
         <input type="submit" name="submit" value="Send">
     </form>
